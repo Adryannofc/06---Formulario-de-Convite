@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modules/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Event Presence Form</title>
+  </head>
+
+  <body>
+    <div id="layout">
+      <main>
+        <div class="back">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M5 12l4 4" />
+            <path d="M5 12l4 -4" />
+          </svg>
+          <span>Back</span>
+        </div>
+
+        <header>
+          <h1>Formulário de Convite</h1>
+          <p>
+            Preencha os dados abaixo para confirmar sua presença em nosso evento
+            especial.
+          </p>
+        </header>
+
+        <form action="">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <div class="input-wrapper">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" name="name" required placeholder="Maria Silva Santos"/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="maria@exemplo.com"/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(11) 91234-5678"/>
+            </div>
+
+            <div class="select-wrapper">
+              <label for="accompanying">Numero de acompanhates</label>
+              <select id="accompanying" name="accompanying" required>
+                <option value="">Selecione</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="message">Mensagem (opcional)</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Confirmar Presença</button>
+          </fieldset>
+        </form>
+      </main>
+
+      <aside></aside>
+    </div>
+  </body>
+</html>
